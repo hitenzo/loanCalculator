@@ -1,0 +1,22 @@
+.content {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.loan-panel {
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.loan-header {
+    margin-bottom: 20px;
+}
+
+.loan-inputs {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
