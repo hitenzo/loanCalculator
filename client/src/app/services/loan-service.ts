@@ -12,7 +12,7 @@ export class LoanService {
 
     
 
-    CreateBet(arg1: any): Observable<any> {
+    CalculateLoan(arg1: any): Observable<any> {
         return new Observable<any>((observer) => {
             let request = this.requests.post('/controller/method', arg1);
             
