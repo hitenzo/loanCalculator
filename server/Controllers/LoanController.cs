@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
+using server.Controllers.ViewModels;
 
 namespace server.Controllers
 {
@@ -15,36 +17,10 @@ namespace server.Controllers
             
         }
 
-        // GET api/values
-        [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
-
-        // GET api/values/5
-        [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
-        {
-            return "value";
-        }
-
-        // POST api/values
         [HttpPost("CalculateLoanPlan")]
-        public void CalculateLoanPlan([FromBody] float loanAmount, int timeInYears)
+        public int CalculateLoanPlan([FromBody] LoanCalculateRequest request)
         {
-        }
-
-        // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
+            return 99;
         }
     }
 }

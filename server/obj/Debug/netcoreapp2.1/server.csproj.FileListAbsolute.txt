@@ -1,0 +1,14 @@
+C:\projects\loanCalculatorApp\server\bin\Debug\netcoreapp2.1\server.deps.json
+C:\projects\loanCalculatorApp\server\bin\Debug\netcoreapp2.1\server.runtimeconfig.json
+C:\projects\loanCalculatorApp\server\bin\Debug\netcoreapp2.1\server.runtimeconfig.dev.json
+C:\projects\loanCalculatorApp\server\bin\Debug\netcoreapp2.1\server.dll
+C:\projects\loanCalculatorApp\server\bin\Debug\netcoreapp2.1\server.pdb
+C:\projects\loanCalculatorApp\server\obj\Debug\netcoreapp2.1\server.csprojAssemblyReference.cache
+C:\projects\loanCalculatorApp\server\obj\Debug\netcoreapp2.1\server.csproj.CoreCompileInputs.cache
+C:\projects\loanCalculatorApp\server\obj\Debug\netcoreapp2.1\server.RazorAssemblyInfo.cache
+C:\projects\loanCalculatorApp\server\obj\Debug\netcoreapp2.1\server.RazorAssemblyInfo.cs
+C:\projects\loanCalculatorApp\server\obj\Debug\netcoreapp2.1\server.AssemblyInfoInputs.cache
+C:\projects\loanCalculatorApp\server\obj\Debug\netcoreapp2.1\server.AssemblyInfo.cs
+C:\projects\loanCalculatorApp\server\obj\Debug\netcoreapp2.1\server.RazorTargetAssemblyInfo.cache
+C:\projects\loanCalculatorApp\server\obj\Debug\netcoreapp2.1\server.dll
+C:\projects\loanCalculatorApp\server\obj\Debug\netcoreapp2.1\server.pdb

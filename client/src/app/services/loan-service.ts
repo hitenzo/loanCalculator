@@ -3,6 +3,7 @@ import { Subject } from 'rxjs';
 import { Injectable } from '@angular/core';
 import { Observable } from "rxjs"
 import { RequestsProvider } from './request-provider';
+import { LoanCalculateRequest } from '../viewModels/loanCalculateRequest';
 
 @Injectable({
     providedIn: 'root',
@@ -12,12 +13,12 @@ export class LoanService {
 
     
 
-    CalculateLoan(arg1: any): Observable<any> {
+    CalculateLoan(arg1: LoanCalculateRequest): Observable<any> {
         return new Observable<any>((observer) => {
-            let request = this.requests.post('/controller/method', arg1);
+            let request = this.requests.post('/api/Loan/CalculateLoanPlan', arg1);
             
             request.subscribe(
-                (data: any) => {
+                (data: number) => {
                     let return_data = data;
                     observer.next(return_data);
                 },
