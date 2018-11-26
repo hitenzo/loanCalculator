@@ -36,14 +36,7 @@ input {
     font-size: 16px;
     border-radius: 5px;
     border: 1px solid lightblue;
-}
-
-.loan-amount-input {
-
-}
-
-.loan-duration-input {
-
+    width: 100%;
 }
 
 .wrong-input {
@@ -56,6 +49,13 @@ input {
     font-weight: 500;
 }
 
+.total-cost {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
 .rate-row {
     display: flex;
     font-size: 18px;
@@ -63,18 +63,18 @@ input {
 }
 
 .rate-index {
-    width: 40%;
+    width: 50%;
     text-align: center;
 }
 
 .rate-stake {
-    width: 60%;
-    // text-align: center;
+    width: 50%;
 }
 
 .rate-header {
     display: flex;
     font-size: 20px;
+    font-weight: 600;
     justify-content: space-between; 
     margin-bottom: 10px;
 }
