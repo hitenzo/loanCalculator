@@ -1,11 +1,31 @@
 <div class="content">
   <div class="loan-panel">
     <div class="loan-header">Mortage loan calculator</div>
-    <div class="loan-inputs">
-      <input type="text">
-      <input type="text">
+    <form name="myForm"class="loan-inputs">
+      <div class="input-group">
+        <div class="label">Loan amount in PLN</div>
+        <input type="number" name="input-amount" min="0" [(ngModel)]="LoanAmount" class="loan-amount-input" placeholder="eg. 100 000">
+      </div>
+
+      <div class="input-group">
+        <div class="label">Duration in years</div>
+        <input type="number" name="input-time" min="0" [(ngModel)]="LoanDurationInYears" class="loan-duration-input" placeholder="eg. 10"
+          (keyup.enter)="CalculateLoan()">
+      </div>
+
       <button type="button" class="btn btn-success" (click)="CalculateLoan()">Submit</button>
+    </form>
+    <div *ngIf="IsLoanCalculated" class="loan-details">
+      <div class="rate-header">
+        <div class="rate-index">rate number</div>
+        <div class="rate-stake">rate amount in PLN</div>
+      </div>
+      <div *ngFor="let rate of CalculatedLoan.loanRates; let i = index">
+        <div class="rate-row">
+          <div class="rate-index">{{i + 1}}</div>
+          <div class="rate-stake">{{rate | number : '1.2-2'}}</div>
+        </div>
+      </div>
     </div>
-    <div class="loan-details">outcome of loan calculations here</div>
   </div>
 </div>

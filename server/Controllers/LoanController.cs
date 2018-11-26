@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using server.Controllers.ViewModels;
+using server.Models.LoanTypesData;
+using server.Services;
 
 namespace server.Controllers
 {
@@ -12,15 +14,17 @@ namespace server.Controllers
     [ApiController]
     public class LoanController : ControllerBase
     {
+        private LoanService loanService;
+
         public LoanController()
         {
-            
+            loanService = new LoanService();
         }
 
-        [HttpPost("CalculateLoanPlan")]
-        public int CalculateLoanPlan([FromBody] LoanCalculateRequest request)
+        [HttpPost("CalcDecreaseMonthLoan")]
+        public LoanCalculateResult CalcDecreaseMonthLoan([FromBody] LoanCalculateRequest request)
         {
-            return 99;
+            return loanService.CalcDecreaseMonthLoan(request);
         }
     }
 }
